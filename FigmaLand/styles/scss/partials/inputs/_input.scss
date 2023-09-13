@@ -1,0 +1,20 @@
+@import '../../typography/fonts';
+
+@mixin input-layout($width, $height, $borderRadius) {
+	width: $width;
+	height: $height;
+	border-radius: $borderRadius;
+	border: none;
+}
+
+input {
+	@include input-layout(350px, 50px, 150px);
+	margin-bottom: 15px;
+
+	&::placeholder {
+		font-family: $primaryFont;
+		color: #000;
+		position: relative;
+		left: 30px;
+	}
+}

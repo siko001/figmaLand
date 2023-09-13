@@ -1,0 +1,14 @@
+.subscribe-section {
+	@include text-container;
+	margin-top: 100px;
+
+	&__title {
+		@include centered-text;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}

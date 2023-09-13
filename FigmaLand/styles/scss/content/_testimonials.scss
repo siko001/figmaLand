@@ -1,0 +1,17 @@
+.testimonials-section {
+	position: relative;
+	top: -30px;
+	@include text-container;
+
+	&__title {
+		@include centered-text;
+		width: 43%;
+		gap: 50px;
+	}
+}
+
+.testimonials__content img {
+	position: relative;
+	top: 30px;
+	left: -10px;
+}

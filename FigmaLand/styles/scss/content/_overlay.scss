@@ -1,0 +1,97 @@
+.overlay {
+	font-family: $primaryFont;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1000;
+	transition: left 0.5s ease-in-out;
+}
+
+/* Styling for the mobile navigation menu */
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	transition: left 0.5s ease-in-out;
+	div {
+		color: #fff;
+	}
+}
+
+.overlay.active,
+.mobile-menu.active {
+	left: 0;
+}
+
+.mobile-menu-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&__header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding: 50px;
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		.menu-primary-menu-container {
+			display: flex;
+			height: 100%;
+			width: 100%;
+			.menu {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				li {
+					list-style: none;
+				}
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__footer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 40px;
+
+		.brand {
+			margin-left: 10px;
+			color: red;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+hr {
+	margin: 0 auto;
+	width: 75%;
+	margin-bottom: 40px;
+}
+
+#close-overlay {
+	cursor: pointer;
+	font-size: 3rem;
+}

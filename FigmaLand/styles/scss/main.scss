@@ -1,0 +1,62 @@
+//Basic resets
+@import 'layout/resets';
+
+//Basic Structring of the page
+@import 'layout/layout';
+
+//--Partials--
+//Basic text box container
+@import 'partials/text/text-box.scss';
+//Basic structures of buttons
+@import 'partials/buttons/button';
+//basic input
+@import 'partials/inputs/input';
+//--End Partials--
+
+//Background for the page
+@import 'layout/background';
+
+//all Typography and color
+@import 'typography/fonts';
+@import 'typography/colors';
+
+//Navbar
+@import 'navbar/navbar';
+
+//Content for page
+@import 'content/header';
+@import 'content/featured';
+@import 'content/about';
+@import 'content/subscribe';
+@import 'content/partners';
+@import 'content/testimonials';
+@import 'content/pricing';
+@import 'content/contact';
+@import 'content/footer';
+@import 'content/overlay';
+
+//Responsivnese
+@import 'layout/responsive';
+
+.reveal-Y {
+	position: relative;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: 1s all ease-in-out;
+}
+.reveal-X {
+	position: relative;
+	transform: translateX(50px);
+	opacity: 0;
+	transition: 1s all ease-in-out;
+}
+
+.reveal-X.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.reveal-Y.active {
+	transform: translateY(0);
+	opacity: 1;
+}

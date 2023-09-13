@@ -1,0 +1,28 @@
+.featured-section {
+	@include text-container;
+
+	&__title {
+		@include centered-text;
+	}
+
+	&__features {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		gap: 70px;
+	}
+
+	.features__content {
+		display: flex;
+		flex-direction: column;
+		width: 255px;
+		text-align: left;
+		gap: 10px;
+	}
+
+	.feature-img {
+		position: relative;
+		float: left;
+		margin-right: 5px;
+	}
+}

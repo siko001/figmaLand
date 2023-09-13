@@ -1,0 +1,10 @@
+@mixin text-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 50px auto;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	text-align: center;
+}

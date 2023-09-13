@@ -1,0 +1,54 @@
+.partners-section {
+	@include text-container;
+	margin-top: 100px;
+
+	&__title {
+		@include centered-text;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+		justify-items: center;
+		align-items: center;
+		width: 80%;
+	}
+
+	.content-btn-reveresed {
+		position: relative;
+		top: -110px;
+	}
+}
+
+.partners__content {
+	display: flex;
+	flex-direction: column;
+	width: 255px;
+	gap: 10px;
+	margin-bottom: 70px;
+}
+
+/* Reverse the order of items using the order property */
+.partners__content:nth-child(1) {
+	order: 6;
+}
+
+.partners__content:nth-child(2) {
+	order: 5;
+}
+
+.partners__content:nth-child(3) {
+	order: 4;
+}
+
+.partners__content:nth-child(4) {
+	order: 3;
+}
+
+.partners__content:nth-child(5) {
+	order: 2;
+}
+
+.partners__content:nth-child(6) {
+	order: 1;
+}

@@ -1,0 +1,19 @@
+.about-section {
+	@include text-container;
+	margin-top: 100px;
+
+	
+	&__title {
+		@include centered-text;
+	}
+	&__image {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+}
+
+.about-image {
+	width: 100%;
+}

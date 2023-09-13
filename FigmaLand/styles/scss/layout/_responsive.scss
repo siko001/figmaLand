@@ -1,0 +1,138 @@
+@include tablet {
+	/* 	Show burger menu icon on phones */
+	.burger-menu {
+		position: relative;
+		top: 10px;
+		left: -10px;
+		display: block;
+		font-size: 2rem;
+		color: #fff;
+	}
+
+	/* 	Hide desktop nav links and cart icon on phones */
+	.menu {
+		display: none;
+	}
+}
+
+@include mobile {
+	// Mobile content
+	.header-container {
+		width: 100%;
+		flex-direction: column-reverse;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	.content-picture {
+		position: relative;
+		top: 0px;
+	}
+
+	#header-text::before {
+		content: 'Lighting Fast Prototyping';
+	}
+
+	.content-paragraph {
+		top: 80px;
+		left: 1%;
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.content-paragraph h2 {
+		font-size: 2rem;
+	}
+	.content-btn {
+		position: relative;
+		top: 360px;
+		margin: 0 auto;
+		left: -5px;
+	}
+
+	.content-picture img,
+	.content-picture {
+		width: 89vw;
+		max-width: 89vw;
+		padding-left: 20px;
+		height: 400px;
+	}
+
+	.featured-section__title {
+		margin-top: 100px;
+	}
+
+	.featured-section__features {
+		position: relative;
+		left: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-section__image {
+		width: 100%;
+	}
+
+	.partners-section__container {
+		grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+		left: 0;
+	}
+
+	.partners__content:nth-child(1) {
+		display: none;
+	}
+
+	.partners__content:nth-child(2) {
+		display: none;
+	}
+
+	.partners__content:nth-child(3) {
+		display: none;
+	}
+
+	.testimonials-section__title {
+		width: 70%;
+	}
+
+	.pricing-section .pricing-img {
+		width: 90%;
+	}
+
+	.contact-section__container {
+		width: 100%;
+		flex-direction: column-reverse;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: -133px;
+	}
+
+	.contact-section__form {
+		width: 100%;
+		position: relative;
+		top: 120px;
+
+		input,
+		textarea {
+			width: 80%;
+		}
+	}
+
+	.footer-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__pages {
+			margin-bottom: 60px;
+		}
+		&__map {
+			margin-bottom: 60px;
+		}
+	}
+}

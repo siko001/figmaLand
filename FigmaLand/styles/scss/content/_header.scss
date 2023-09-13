@@ -1,0 +1,19 @@
+.content-picture img,
+.content-picture {
+	z-index: 1;
+	width: 75%;
+	max-width: 75%;
+}
+
+.content-paragraph {
+	font-family: $secondaryFont;
+	font-size: 1rem;
+	position: relative;
+	color: $primaryColor;
+	z-index: 1;
+	width: 47.2%;
+	left: -30px;
+}
+#header-text::before {
+	content: 'We focus of ergonomics';
+}

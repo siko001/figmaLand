@@ -1,0 +1,39 @@
+$primaryColor: #fff;
+$buttonColor: #38a3f1;
+$secondaryButtonColor: #ef2779;
+
+$whiteBgColor: #fff;
+$blueBgColor: $buttonColor;
+$pinkBgColor: $secondaryButtonColor;
+
+@mixin buttonLayout($width, $height, $br, $color, $bgcolor) {
+	border: none;
+	width: $width;
+	height: $height;
+	border-radius: $br;
+	font-family: 'Signika', sans-serif;
+	color: $color;
+	background-color: $bgcolor;
+}
+
+.content-btn {
+	@include buttonLayout(200px, 50px, 100px, $buttonColor, $whiteBgColor);
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+.content-btn-reveresed {
+	@include buttonLayout(200px, 50px, 100px, $primaryColor, $blueBgColor);
+	font-weight: 800;
+	font-size: 1.2rem;
+
+	&__long {
+		@include buttonLayout(250px, 50px, 100px, $primaryColor, $blueBgColor);
+		font-weight: 800;
+		font-size: 1.2rem;
+	}
+}
+
+.pink-btn {
+	@include buttonLayout(350px, 50px, 150px, $primaryColor, $secondaryButtonColor);
+}

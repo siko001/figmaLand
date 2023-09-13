@@ -1,0 +1,11 @@
+.pricing-section {
+	@include text-container;
+
+	&__title {
+		@include centered-text;
+	}
+
+	.pricing-img {
+		width: 400px;
+	}
+}
